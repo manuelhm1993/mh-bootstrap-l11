@@ -1,0 +1,21 @@
+Pasos para instalar bootstrap en laravel 11
+1. Crear un proyecto nuevo
+2. Configuración estándar
+3. Instalar boostrap, popper y sass: npm i -D bootstrap @popperjs/core sass
+4. Crear el archivo app.scss dentro de resources y sass: touch resources/sass/app.scss
+5. Importar bootstrap dentro del app.scss: @import 'bootstrap/scss/bootstrap';
+6. Abrir el archivo resources/js/app.js y escribir: import * as bootstrap from 'bootstrap';
+7. De esa manera se puede trabajar con estilos y js desde blade
+8. Crear un nuevo welcome.blade.php llamado home.blade.php y enrutarlo
+9. En el head colocar: @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+10. Usar componentes bootstrap
+11. Ejecutar el comando: npm run dev
+12. Crear la carpeta layouts y las plantillas blade
+13. Crear 50 usuarios con los seeders: php artisan db:seed
+14. Ir a app/Providers/AppServiceProvider.php y colocar en boot: Paginator::useBootstrapFive();
+
+Usar laravel 11 con bootstrap 5.3
+https://www.youtube.com/watch?v=CrV-_uKniJ4&list=PLxrGZ-lMH-c6J1m_GrWJCe3AzROqzMW9i&index=2
+
+Paginación con laravel 11 y bootstrap 5.3
+https://www.youtube.com/watch?v=pWt50dxnM_M&list=PLxrGZ-lMH-c6J1m_GrWJCe3AzROqzMW9i&index=3
